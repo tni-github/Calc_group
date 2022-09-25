@@ -5,6 +5,9 @@ import logger as log
 
 
 def get_number(i):
+    '''
+    Получение числа с учетом типа и проверка корректности ввода.
+    '''
     number_type = ch.check_number_type(
         f'Укажите, какого типа будет число {i}? \n 1 Рациональное \n 2 Комплексное \n')
     if number_type == 1:
@@ -19,6 +22,9 @@ def get_number(i):
 
 
 def get_operation():
+    '''
+    Функция получает номер опреации и проверяет его на корректность.
+    '''
     operation_a_b = ch.check_number_operation(
         'Какую операцию вы хотите выполнить? \n 1 Сложение \n 2 Вычитание \n 3 Умножение \n 4 Деление \n 5 Возведение в степень\n')
     log.operation_logger(operation_a_b)
