@@ -6,6 +6,9 @@ os.system("cls")
 
 
 def button_click():
+    '''
+    Запуск и отработка приложения.
+    '''
     value_a = ui.get_number(1)
     value_b = ui.get_number(2)
     operation_a_b = ui.get_operation()
