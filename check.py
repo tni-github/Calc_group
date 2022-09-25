@@ -98,6 +98,9 @@ def check_number_operation(input_string):
 
 
 def check_exceptions_div(a, b):
+    '''
+    Функция отлавливает исключения при делении.
+    '''
     try:
         op.div_numbers(a, b)
     except ZeroDivisionError:
@@ -107,6 +110,9 @@ def check_exceptions_div(a, b):
 
 
 def check_exceptions_exp(a, b):
+    '''
+    Функция отлавливает исключения при возведении в степень.
+    '''
     try:
         op.exp_numbers(a, b)
     except ZeroDivisionError:
