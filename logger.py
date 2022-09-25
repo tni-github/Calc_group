@@ -4,6 +4,9 @@ from dictionary import dict_operations as d
 
 
 def value_num_logger(data, i):
+    '''
+    Логгер для записи значений, введенных пользователем.
+    '''
     time = dt.now().strftime('%H:%M')
     if i == 1:
         with open('log.csv', 'a') as file:
@@ -14,6 +17,9 @@ def value_num_logger(data, i):
 
 
 def operation_logger(data):
+    '''
+    Логгер для записи операции с числами, введенной пользователем.
+    '''
     time = dt.now().strftime('%H:%M')
     data = d[data]
     with open('log.csv', 'a', encoding='utf-8') as file:
@@ -22,6 +28,9 @@ def operation_logger(data):
 
 
 def result_logger(data):
+    '''
+    Логгер для записи результата выполнения операции с числами.
+    '''
     time = dt.now().strftime('%H:%M')
     with open('log.csv', 'a') as file:
         file.write('{};result;{}\n'.format(time, data))
