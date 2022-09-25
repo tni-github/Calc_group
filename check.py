@@ -28,7 +28,7 @@ def check_number_type(input_string: str) -> int:
             number_type = input(input_string)
 
 
-def check_ratio_number(input_string: str) -> int:
+def check_ratio_number(input_string: str) -> float:
     '''
     Функция проверки на рациональное число.
     '''
@@ -101,10 +101,9 @@ def check_exceptions_div(a, b):
     try:
         op.div_numbers(a, b)
     except ZeroDivisionError:
-        if b == 0:
-            print(Fore.GREEN + Back.RED +
-                  'Вы ввели комбинацию, при которой происходит деление на ноль. Программа завершается!')
-            sys.exit()
+        print(Fore.GREEN + Back.RED +
+              'Вы ввели комбинацию, при которой происходит деление на ноль. Программа завершается!')
+        sys.exit()
 
 
 def check_exceptions_exp(a, b):
